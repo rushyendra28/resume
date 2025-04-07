@@ -128,6 +128,15 @@ li {
 .contact-item i {
     color: var(--secondary-color);
 }
+.contact-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: var(--secondary-color);
+}
 
 section {
     background: var(--section-bg);
