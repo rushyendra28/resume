@@ -280,6 +280,26 @@ section {
     margin: 0;
 }
 
+.github-section {
+    grid-column: 1 / -1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.github-section .calendar {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Override calendar colors to match your theme */
+.calendar .contrib-number {
+    color: #333;
+}
+
+.calendar .contrib-column {
+    padding: 15px 0;
+}
+
 /* Animations */
 @keyframes glow {
     from {

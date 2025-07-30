@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
     <title>My Resume</title>
 </head>
 <body>
@@ -115,8 +116,22 @@
                         <li>Photographer in AGROWClub</li>
                     </ul>
                 </section>
+
+                <section class="glass-panel github-section">
+                    <div class="section-header">
+                        <i class="fab fa-github"></i>
+                        <h2>GitHub Contributions</h2>
+                    </div>
+                    <div class="calendar">
+                        <!-- GitHub calendar will be rendered here -->
+                    </div>
+                </section>
             </div>
         </main>
     </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+        GitHubCalendar(".calendar", "rushyendra28", { responsive: true });
+    </script>
 </body>
 </html>
