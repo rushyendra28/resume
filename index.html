@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>My Resume</title>
 </head>
 <body>
     <div class="container">
-        <header class="glass-panel">
+        <header class="fullscreen-header">
             <div class="header-content">
-                <div class="profile-image">
+                <div class="profile-image" data-aos="fade-down">
                     <img src="./image.jpeg" alt="Rushyendra Gusidi">
                 </div>
-                <div class="header-text">
+                <div class="header-text" data-aos="fade-up">
                     <h1>Rushyendra Gusidi</h1>
                     <div class="contact-info">
                         <div class="contact-item"><i class="fas fa-location-dot"></i><p>Visakhapatnam, Andhra Pradesh</p></div>
@@ -30,12 +31,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+                    <p>Scroll Down</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
         </header>
 
         <main>
             <div class="grid-container">
-                <section class="glass-panel introduction">
+                <section class="glass-panel introduction" data-aos="fade-up">
                     <div class="section-header">
                         <i class="fas fa-user-astronaut"></i>
                         <h2>Introduction</h2>
@@ -43,7 +48,7 @@
                     <p>A technology driven individual with hunger for knowledge and innovation. With a skill set built around development and project management. Driven and motivated individual seeking for entry level position in Software development and management, eager to learn and contribute to a forward thinking organization. </p>
                 </section>
 
-                <section class="glass-panel education">
+                <section class="glass-panel education" data-aos="fade-up">
                     <div class="section-header">
                         <i class="fas fa-graduation-cap"></i>
                         <h2>Education</h2>
@@ -59,7 +64,7 @@
                     </ul>
                 </section>
 
-                <section class="glass-panel experience">
+                <section class="glass-panel experience" data-aos="fade-up">
                     <h2>Projects</h2>
                     <ul>
                         <li>
@@ -77,7 +82,7 @@
                     </ul>
                 </section>
 
-                <section class="glass-panel skills">
+                <section class="glass-panel skills" data-aos="fade-up">
                     <h2>Skills</h2>
                     <ul>
                         
@@ -98,7 +103,7 @@
                     </ul>
                 </section>
 
-                <section class="glass-panel certifications">
+                <section class="glass-panel certifications" data-aos="fade-up">
                     <h2>Certifications</h2>
                     <ul>
                         <li>Social Psychology (with Honors) Wesleyan University</li>
@@ -108,7 +113,7 @@
                     </ul>
                 </section>
 
-                <section class="glass-panel achievements">
+                <section class="glass-panel achievements" data-aos="fade-up">
                     <h2>Achievements</h2>
                     <ul>
                         <li>2024 Winner, Wonder of Wonders Hackathon </li>
@@ -117,7 +122,7 @@
                     </ul>
                 </section>
 
-                <section class="glass-panel github-section">
+                <section class="glass-panel github-section" data-aos="fade-up">
                     <div class="section-header">
                         <i class="fab fa-github"></i>
                         <h2>GitHub Contributions</h2>
@@ -130,8 +135,14 @@
         </main>
     </div>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         GitHubCalendar(".calendar", "rushyendra28", { responsive: true });
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>
